@@ -7,7 +7,7 @@ def value(name):
     """
     This function returns the following values:
     - all macosx prefixed pycts
-    - all sp rpefixed pycts
+    - all sp prefixed pycts
     """
 
     ### Importing
