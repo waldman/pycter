@@ -1,3 +1,15 @@
+"""
+====================
+= Pythonversion.py =
+====================
+"""
 def value(name):
-    value = dict({name: 'Not Implemented Yet!'})
+    """
+    This function returns the following values:
+    - pythonversion
+    """
+    import platform
+    value = dict({
+        'pythonversion': platform.python_version()
+        })
     return value
