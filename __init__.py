@@ -54,7 +54,7 @@ def Pycts():
         pycts.update(getattr(Platform, i).value(i))
 
     ### Adding Pycterversion
-    pycts.update({'Pycterversion': _version})
+    pycts.update({'pycterversion': _version})
 
     return pycts
 

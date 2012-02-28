@@ -1,3 +1,17 @@
+"""
+=========
+= Ps.py =
+=========
+"""
 def value(name):
-    value = dict({name: 'Not Implemented Yet!'})
+    """
+    This function returns the following values:
+    - ps
+    """
+
+    ps = 'ps -auxwww'
+
+    value = dict({
+        'ps': ps,
+        })
     return value
