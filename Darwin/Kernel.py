@@ -1,6 +1,6 @@
 """
 =============
-= Kernel.py =
+= kernel.py =
 =============
 """
 def value(name):

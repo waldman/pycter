@@ -1,6 +1,6 @@
 """
 ===========
-= Path.py =
+= path.py =
 ===========
 """
 def value(name):

@@ -1,6 +1,6 @@
 """
 ====================
-= Pythonversion.py =
+= pythonversion.py =
 ====================
 """
 def value(name):

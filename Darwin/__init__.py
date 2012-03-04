@@ -1,11 +1,14 @@
 ### Auto-Importing all modules.
-from Kernel import value
-from Domain import value
-from Interfaces import value
-from Macosx import value
-from Path import value
-from Ps import value
-from Pythonversion import value
-from Timezone import value
-from Uptime import value
-
+import kernel 
+import domain 
+import interfaces 
+import macosx 
+import path 
+import ps 
+import pythonversion 
+import timezone 
+import uptime 
+ 
+def funcList():
+    list = ['kernel','domain','interfaces','macosx','path','ps','pythonversion','timezone','uptime']
+    return list

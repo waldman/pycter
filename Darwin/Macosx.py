@@ -1,6 +1,6 @@
 """
 =============
-= Macosx.py =
+= macosx.py =
 =============
 """
 def value(name):

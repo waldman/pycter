@@ -1,6 +1,6 @@
 """
 =============
-= Uptime.py =
+= uptime.py =
 =============
 """
 def value(name):
@@ -15,9 +15,15 @@ def value(name):
     from os import popen
 
     uptime_raw = popen('uptime').read().split()
-    uptime_total_days = uptime_raw[2]
-    uptime_hours = uptime_raw[4].split(':')[0]
-    uptime_minutes = uptime_raw[4].split(':')[1]
+    if uptime_raw[3] == 'day' or uptime_raw[3] == 'days':
+        uptime_total_days = uptime_raw[2]
+        uptime_hours = uptime_raw[4].split(':')[0]
+        uptime_minutes = uptime_raw[4].split(':')[1]
+    else:
+        uptime_total_days = '0'
+        uptime_hours = uptime_raw[2].split(':')[0]
+        uptime_minutes = uptime_raw[2].split(':')[1]
+
     uptime_total_hours = int(uptime_total_days) * 24 + int(uptime_hours)
     uptime_total_minutes = int(uptime_total_hours) * 60 + int(uptime_minutes.replace(',', ''))
     uptime_total_seconds = int(uptime_total_minutes) * 60

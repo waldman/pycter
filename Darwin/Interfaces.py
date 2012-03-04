@@ -1,6 +1,6 @@
 """
 =================
-= Interfaces.py =
+= interfaces.py =
 =================
 """
 def value(name):

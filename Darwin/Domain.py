@@ -1,6 +1,6 @@
 """
 =============
-= Domain.py =
+= domain.py =
 =============
 """
 def value(name):
